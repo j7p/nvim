@@ -1,3 +1,8 @@
+.netrwhist
+autoload/
+bundle/
+init_old.vim
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
