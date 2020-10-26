@@ -19,7 +19,6 @@ set ruler
 set undolevels=1000
 "set guifont=Consolas:h18
 
-
 call plug#begin('~/.config/nvim/bundle')
 
 " Make sure you use single quotes
@@ -60,7 +59,7 @@ Plug 'rafi/awesome-vim-colorschemes'
 
 Plug 'voldikss/vim-floaterm'
 
-"Plug 'sirver/UltiSnips'
+Plug 'sirver/UltiSnips'
 Plug 'honza/vim-snippets'
 
 Plug 'airblade/vim-gitgutter'
@@ -98,6 +97,8 @@ nnoremap <leader>tr :call OpenTermRight()<CR>
 
 " Trigger configuration. You need to change this to something else than <tab>
 " if you use https://github.com/Valloric/YouCompleteMe.
+
+let g:UltiSnipsSnippetsDir = $HOME.'/.config/nvim/UltiSnips'
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
